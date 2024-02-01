@@ -1,4 +1,3 @@
-# print some numbers including integers and floating types
 num=7
 print(num)
 myfloat=7.0
