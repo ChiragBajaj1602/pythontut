@@ -18,3 +18,30 @@ def name_the_benefits_of_functions():
         print(build_sentence(benefit))
 
 name_the_benefits_of_functions()
+def my_function(*kids):
+    print(f"The most mischiveous child among all is {kids[2]}")
+my_function("john","sturgis","sheldon")
+def my_function_with(**kid):
+    print("His Last name  is "+kid["lname"])
+my_function_with(fname="sheldon",lname="cooper")
+# passing a list as an argument
+def trirecursion(k):
+    if(k>0):
+        result=k+trirecursion(k-1)
+        print(result)
+    else:
+        result=0
+    return result
+print("\n\n Recursion example results")
+trirecursion(6)
+# lamda functions 
+x=lambda a:a+10
+print(x(5))
+
+# x recieves the value of the 
+# lamda function
+def myfunction(n):
+    return lambda a:a*n
+mytripler=myfunction(3)
+result=mytripler(2)
+print(result)
