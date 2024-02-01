@@ -14,6 +14,8 @@ names = ["John", "Eric", "Jessica"]
 numbers.append(1)
 numbers.append(2)
 numbers.append(3)
+mylist=[9,8,65]
+print(mylist.sort())
 
 strings.append("hello")
 strings.append("world")
